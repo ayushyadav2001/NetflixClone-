@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(image/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+
+}
+nav button{
+    border: none;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-style: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.btnLanguage{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+
+}
+.btnLanguage i{
+    margin-left: 7px;
+}
+.btnLanguage:hover{
+    border: 1px solid rgb(58,178,180);;
+    transition: 0.5s;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+
+}
+.header-content h3{
+font-weight: 400;
+margin-bottom: 20px;
+}
+.searchBox{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+
+}
+.searchBox input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+
+}
+.searchBox button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    
+}
+
+/*  card  */
+
+.card-container{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100vw;
+    height: 70vh;
+    border: 2px solid yellow;
+
+    
+}
+.movieImage{
+    width: 300px;
+    height: 380px;
+    border: 2px solid orange;
+    margin: 15px;
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: 0px 1px 2px gray;
+}
+.movieImage img{
+    width: 300px;
+    height: 380px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    border: 2px solid magenta;
+    
+}
+.card-details h2{
+    font-size: 1.5rem;
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    display: flex;
+
+}
+.card{
+    height: 400px;
+    margin: 50px;
+    box-shadow:5px 5px 20px gray;
+    overflow: hidden;
+}
+.card img{
+    height :400px;
+    width: 300px;
+    border-radius: 3px;
+    transition: 0.5s;
+
+}
+.card-intro{
+    height:200px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -520px;
+
+    background-color: rgb(27, 27, 27,.5);
+}
+.card-intro h1{
+    margin: 10px;
+    font-size: 1.5rem;
+}
+span{
+    font-weight: bolder;
+    color: #db0001;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover span{
+    opacity: 1;
+    visibility: visible;
+
+}
+.btn{
+
+    border: none;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-style: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(3deg);
+}
+
+
+/* Movie css poster */
+h1 {
+    text-align: center;
+  }
+
+  
+  #results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .movie {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .movie img {
+    /* width: 100%; */
+    width: 300px;
+    height: 400px;
+  
+  }
+  
+  #wishlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 3px;
+
+  }
+  
+  .wishlist-movie {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .wishlist-movie img {
+    /* width: 100%; */
+    width: 300px;
+    height: 420px;
+  }
+  
+  .wishlist-movie button {
+    padding: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .wishlist-movie button:hover {
+    /* background-color: #c82333; */
+    background: transparent;
+    border: 1px solid #c82333;
+    transition: 0.5s;
+  }
+
+  .indexpgHe h2{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* movie Description */
+
+.movieCardInfo{
+    display:  flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid yellow; */
+    background: #3C2A21;
+}
+
+.infoTitle{
+    flex: 1;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    width: 100vw;
+    height: 10vh;
+    font-weight: bold;
+    font-family: monospace;
+    color: #D5CEA3;
+    
+    
+}
+.infoSpanTitle{
+    border : 2px solid purple;
+    display: flex;
+
+
+
+}
+.movieInfoImage{
+    flex: 1;
+    width: 300px;
+    height: 380px;
+    border: 2px solid orange;
+    margin: 25px;
+    box-shadow: -1px 0 10px #000000;
+    overflow: hidden;
+    box-sizing: 0px 1px 2px gray;
+    border-radius: 5px;
+    margin-top: 138px;
+
+}
+
+
